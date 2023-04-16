@@ -1,24 +1,36 @@
+<!--需寫在網頁第一行，此宣告是為了讓網頁符合 W3C 的標準化-->
 <!DOCTYPE html>
+<!--台灣地區使用 zh-TW-->
 <html lang="zh-tw">
   <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width,user-scalable=no,maximum-scale=1" />
-    <!--出現在搜尋結果及Facebook的標題-->
-    <title>範例標題</title>
-    <meta property="og:title" content="範例標題"/>
+	<!--設置文檔的字符編碼，用來指定網頁內容是用什麼編碼(character set)，現在大多數的網頁編碼都是UTF-8-->
+	<meta charset="UTF-8">
+	<!--設置文檔的字符編碼，什麼版本IE 就用什麼版本的標準模式-->	
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<!--螢幕解析度，user-scalable 用來設定是否允許使用者改變縮放比例，user-scalable=no 就是不允許縮放-->		
+	<!--螢幕解析度，maximum-scale=1 設定畫面最大的縮放比例為 1，都設為 1 的意思其實就是說不能縮放-->		
+	<meta name="viewport" content="width=device-width,user-scalable=no,maximum-scale=1" />
+    <!--網頁名稱，出現在搜尋結果及Facebook的標題-->
+    <title>朱宥丞の作品集</title>
+	<!--網頁標題-->		
+    <meta property="og:title" content="朱宥丞"/>
     <!--出現在搜尋結果及Facebook的敘述-->
-    <meta name="description" content="範例敘述">
-    <meta property="og:description" content="範例敘述"/>
+    <!--在某些情況下，描述會作為搜索結果的顯示文字-->
+    <meta name="description" content="朱宥丞">
+    <!--為網頁的描述或是簡短說明-->		
+	<meta property="og:description" content="朱宥丞"/>
     <!--出現在Facebook的連結-->
+    <!--網頁的標準網址，域名全稱或者網站地址 -->
     <meta property="og:url" content="https://unclewes.github.io/unclewes/"/>
     <!--出現在Facebook的圖片-->
+	<!--分享網頁時會顯示的縮圖-->		
     <meta property="og:image" content="https://unclewes.github.io/unclewes/assets/img/seo/facebook.jpg"/>
     <link rel="stylesheet" media="all" type="text/css" href="assets/css/temp.css" />
     <link rel="stylesheet" media="all" type="text/css" href="assets/css/smart.css" />
     <link href='https://fonts.googleapis.com/css?family=Josefin+Sans' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="assets/plugin/swipebox/css/swipebox.css">
     <link rel="stylesheet" href="assets/plugin/drawer/css/drawer.css">
+	<!--能嵌入或引用要執行的程式碼。最常見的用途是嵌入或引用 JavaScript 程式碼-->		
     <script type="text/javascript" src="assets/js/jquery-latest.min.js"></script>
     <!--[if lt IE 9]>
     <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -69,10 +81,12 @@
                 <li><a href="#profile">個人檔案</a></li>
                 <!-- <li><a href="#contact">聯絡我</a></li> -->
                 <!--新增選單請從這裡開始貼上 -->
-                <li><a href="#works1">演出簡介-電視劇</a></li>
-                <li><a href="#works2">演出簡介-電影</a></li>				
-                <li><a href="#works3">演出簡介-綜合</a></li>								
+                <li><a href="#works1">電視劇</a></li>
+                <li><a href="#works2">電影</a></li>				
+                <li><a href="#works3">綜合</a></li>								
+                <li><a href="https://www.ptsplus.tv/season/55356e80-c70b-428c-ba9d-33111dbb9272" target="_blank">公視+網頁</a></li> 
                 <li><a href="https://www.google.com.tw/" target="_blank">Google網頁</a></li> 
+                <li><a href="https://www.google.com.tw/" target="_blank">Google網頁</a></li> 				
               </ul>
             </nav>
           </div>
@@ -96,24 +110,24 @@
           <div class="workspace">
             <ul>
               <!-- 新增作品請從這裡開始複製 -->
-              <!-- <li>
+              <li>
                 <a rel="gallery-1" href="assets/img/gallery/gallery-1_1.jpg" class="swipebox" title="範例照片1-1"><!-- 相簿大圖 -->
-                  <!-- <figure>
+                  <figure>
                     <img src="assets/img/gallery/gallery-1.jpg" alt="" width="200" height="200" /> <!-- 相簿封面 -->
-                    <!-- <figcaption>
+                    <figcaption>
                       <h3>作品集範例1</h3> <!-- 作品標題 -->
-                      <!-- <p>2016</p> <!-- 作品說明 -->
-                    <!-- </figcaption>
+                      <p>2016</p> <!-- 作品說明 -->
+                    </figcaption>
                   </figure>
                 </a>
 				<!-- 相簿其他照片 -->
-                <!-- <a rel="gallery-1" href="assets/img/gallery/gallery-1_2.jpg" class="swipebox" style="display:none;" title="範例照片1-2">
+                <a rel="gallery-1" href="assets/img/gallery/gallery-1_2.jpg" class="swipebox" style="display:none;" title="範例照片1-2">
                 </a>
 				<!-- 相簿其他照片 -->
-                <!-- <a rel="gallery-1" href="assets/img/gallery/gallery-1_3.jpg" class="swipebox" style="display:none;" title="範例照片1-3">
+                <a rel="gallery-1" href="assets/img/gallery/gallery-1_3.jpg" class="swipebox" style="display:none;" title="範例照片1-3">
                 </a>
 				<!-- 相簿其他照片 -->
-                <!-- <a rel="gallery-1" href="assets/img/gallery/gallery-1_4.jpg" class="swipebox" style="display:none;" title="範例照片1-4">
+                <a rel="gallery-1" href="assets/img/gallery/gallery-1_4.jpg" class="swipebox" style="display:none;" title="範例照片1-4">
                 </a>
               </li> 
               <!-- 新增作品請複製到這裡結束 -->
@@ -179,38 +193,37 @@
                 </a>
               </li> --> 			  
               <li>
-                <a rel="gallery-7" href="assets/img/gallery/gallery-7_1.jpg" class="swipebox" title="範例照片7-1"><!-- 相簿大圖 -->
-                   <figure>
+                <a rel="gallery-7" href="assets/img/gallery/gallery-7_1.jpg" class="swipebox" title="牛車來去-1"><!-- 相簿大圖 -->
+                  <figure>
                     <img src="assets/img/gallery/gallery-7.jpg" alt="" width="200" height="200" /> <!-- 相簿封面 -->
                     <figcaption>
                       <h3>牛車來去</h3> <!-- 作品標題 -->
-                     <p>2023</p> <!-- 作品說明 -->
+                      <p>2023</p> <!-- 作品說明 -->
                     </figcaption>
-                   </figure>
+                  </figure>
                 </a>
 				<!-- 相簿其他照片 -->
-                 <a rel="gallery-7" href="assets/img/gallery/gallery-7_2.jpg" class="swipebox" style="display:none;" title="範例照片7-2">
+                <a rel="gallery-7" href="assets/img/gallery/gallery-7_2.jpg" class="swipebox" style="display:none;" title="牛車來去-2">
                 </a>
 				<!-- 相簿其他照片 -->
-                 <a rel="gallery-7" href="assets/img/gallery/gallery-7_3.jpg" class="swipebox" style="display:none;" title="範例照片7-3">
+                <a rel="gallery-7" href="assets/img/gallery/gallery-7_3.jpg" class="swipebox" style="display:none;" title="牛車來去-3">
                 </a>
 				<!-- 相簿其他照片 -->
-                 <a rel="gallery-7" href="assets/img/gallery/gallery-7_4.jpg" class="swipebox" style="display:none;" title="範例照片7-4">
+                <a rel="gallery-7" href="assets/img/gallery/gallery-7_4.jpg" class="swipebox" style="display:none;" title="牛車來去-4">
                 </a>
 				<!-- 相簿其他照片 -->
-                 <a rel="gallery-7" href="assets/img/gallery/gallery-7_5.jpg" class="swipebox" style="display:none;" title="範例照片7-5">
+                <a rel="gallery-7" href="assets/img/gallery/gallery-7_5.jpg" class="swipebox" style="display:none;" title="牛車來去-5">
                 </a>
 				<!-- 相簿其他照片 -->
-                 <a rel="gallery-7" href="assets/img/gallery/gallery-7_6.jpg" class="swipebox" style="display:none;" title="範例照片7-6">
+                <a rel="gallery-7" href="assets/img/gallery/gallery-7_6.jpg" class="swipebox" style="display:none;" title="牛車來去-6">
                 </a>
 				<!-- 相簿其他照片 -->
-                 <a rel="gallery-7" href="assets/img/gallery/gallery-7_7.jpg" class="swipebox" style="display:none;" title="範例照片7-7">
+                <a rel="gallery-7" href="assets/img/gallery/gallery-7_7.jpg" class="swipebox" style="display:none;" title="牛車來去-7">
                 </a>
 				<!-- 相簿其他照片 -->
-                 <a rel="gallery-7" href="assets/img/gallery/gallery-7_8.jpg" class="swipebox" style="display:none;" title="範例照片7-8">
+                <a rel="gallery-7" href="assets/img/gallery/gallery-7_8.jpg" class="swipebox" style="display:none;" title="牛車來去-8">
                 </a>
               </li> 			  
-
             </ul> 
           </div>
         </section>
@@ -320,14 +333,19 @@
             <div class="profile_bottom">			
             <!--   <img class="left" src="assets/img/profile/profile.png" alt="uncle wes" width="150" height="150" /> <!-- 大頭照片 -->
             <!--  <p class="right"> --> 
-            <!--  <p>			
+            <!--  <p> -->			
 				<br>
-            <!--      <strong> -->
-                <b Style=";font-size:20px;" >朱宥丞 <!-- 姓名 --> 演員 <!-- 職稱 --> </b>
-				<br><br>
-                <b Style=";font-size:15px;" >語言：日語 閩南語 國語							
-            <!--      </strong> -->
-                <br>
+                <strong>
+                <b Style=";font-size:18px;" > 朱宥丞      <!-- 姓名 --> </b>
+				<br>
+				<b Style=";font-size:18px;" > 演員        <!-- 職稱 --> </b>
+				<br>
+				<b Style=";font-size:18px;" > 2009.08.06   <!-- 生日 --> </b>
+				<br>
+                <b Style=";font-size:18px;" > 日語 閩南語 國語							
+                </strong>
+				<br>
+				<br>
             <!--  </p>
             </div>
             <!-- 社群網站連結 - 個人資料 -->
@@ -337,15 +355,15 @@
                   <li>
                     <!-- facebook -->
                     <a href="https://www.facebook.com/Edward0806" target="_blank">
-                      <img src="assets/img/profile/facebook.png" width="32">
+                      <img src="assets/img/profile/facebook.png" width="35">
                     </a>
 					<!-- instagram -->
                     <a href="https://www.instagram.com/edwardjhu0806/" target="_blank">
-                      <img src="assets/img/profile/instagram.png" width="32">
+                      <img src="assets/img/profile/instagram.png" width="35">
                     </a>
 					<!-- youtube -->
                     <a href="https://www.youtube.com/watch?v=QSZYM8v_07c" target="_blank">
-                      <img src="assets/img/profile/youtube.png" width="32">
+                      <img src="assets/img/profile/youtube.png" width="35">
                     </a>
                   </li>
                 </ul>
@@ -361,6 +379,7 @@
 				<b Style=";font-size:15px;" >TEL：02-8866-1878
                 <br>
 				<b Style=";font-size:15px;" >FAX：02-2562-9175
+                <br><br>	
             <!--  </p> -->
             </div>
 
@@ -408,7 +427,7 @@
           <!-- 標題 -->
           <h2>
           <!-- 歷史紀錄 -->
-          演出簡介-電視劇
+          電視劇
           </h2>
           <div class="workspace02">
              <ul>
@@ -423,59 +442,57 @@
               <!-- 新增歷史紀錄請從這裡開始貼上 -->
               <!-- 2024年X月 <!-- 時間 --> <!-- 聽海湧 <!-- 公司名稱 --> <!-- 新海木德 <!-- 職稱 -->
               <li>
-				<b Style=";font-size:20px;" ><span>				公視				</span></b>
+				<b Style=";font-size:15px;" ><span>				公視				</span></b>
 				<BR>2023.01.14 <!-- 時間 --> / 牛車來去     <!-- 公司名稱 --> / 蔡永隆  <!-- 職稱 -->
                 <BR>2021.10.25 <!-- 時間 --> / 顧巢．抾箬仔 <!-- 公司名稱 --> / 許駿程  <!-- 職稱 -->
 			    <BR>2019.07.27 <!-- 時間 --> / 苦力         <!-- 公司名稱 --> / 許阿勇  <!-- 職稱 -->
 				<BR>2018.12.23 <!-- 時間 --> / 無法辯護     <!-- 公司名稱 --> / 小永    <!-- 職稱 -->
               </li>				
               <li>
-				<b Style=";font-size:20px;" ><span>				台視				</span></b>
+				<b Style=";font-size:15px;" ><span>				台視				</span></b>
 			    <BR>2022.04.28 <!-- 時間 --> / 美麗人生             <!-- 公司名稱 --> / 王力德 <!-- 職稱 -->
 			    <BR>2019.08.30 <!-- 時間 --> / 你那邊怎樣。我這邊OK <!-- 公司名稱 --> / 佑佑   <!-- 職稱 -->
 			    <BR>2018.11.16 <!-- 時間 --> / 種菜女神             <!-- 公司名稱 --> / 米唐   <!-- 職稱 -->              
 			  </li>
               <li>
-				<b Style=";font-size:20px;" ><span>				華視				</span></b>
+				<b Style=";font-size:15px;" ><span>				華視				</span></b>
 			    <BR>2021.08.08 <!-- 時間 --> / 俗女養成記2 <!-- 公司名稱 --> / 蔡永森 <!-- 職稱 -->
 			    <BR>2019.08.04 <!-- 時間 --> / 俗女養成記  <!-- 公司名稱 --> / 蔡永森 <!-- 職稱 -->
-			    <BR>2019.04.14 <!-- 時間 --> / 蘇爺爺的肖像畫  <!-- 公司名稱 --> / 洪宗明 <!-- 職稱 -->				
+			    <BR>2019.04.14 <!-- 時間 --> / 蘇爺爺的肖像畫  <!-- 公司名稱 --> / 洪宗明 <!-- 職稱 -->
 				<!-- https://www.youtube.com/watch?v=saMC9vC6dNg -->
               </li>
               <li>
-				<b Style=";font-size:20px;" ><span>				Netflix				</span></b>
+				<b Style=";font-size:15px;" ><span>				Netflix				</span></b>
 			    <BR>2021.11.26 <!-- 時間 --> / 華燈初上 <!-- 公司名稱 --> / 吳子維 <!-- 職稱 -->
               </li>
               <li>
-				<b Style=";font-size:20px;" ><span>				大愛電視台			</span></b>
+				<b Style=";font-size:15px;" ><span>				大愛電視台			</span></b>
 			    <BR>2022.08.08 <!-- 時間 --> / 冬菊沒問題 <!-- 公司名稱 --> / 阮博煜 <!-- 職稱 -->
 				<BR>2022.03.30 <!-- 時間 --> / 隨風隨緣   <!-- 公司名稱 --> / 陳木琳 <!-- 職稱 -->
 			    <BR>2021.05.31 <!-- 時間 --> / 觀音對我笑 <!-- 公司名稱 --> / 謝明學 <!-- 職稱 -->
 			    <BR>2017.05.26 <!-- 時間 --> / 朢月           <!-- 公司名稱 --> / 周河磬 <!-- 職稱 -->              
-                <!-- https://www.youtube.com/watch?v=E_8zWXr17ro&t=7s -->				
-
 			    <BR>2015.06.21 <!-- 時間 --> / 月娘       <!-- 公司名稱 --> / 鄭永明 <!-- 職稱 -->				
               </li>
               <li>
-				<b Style=";font-size:20px;" ><span>				民視				</span></b>
+				<b Style=";font-size:15px;" ><span>				民視				</span></b>
 			    <BR>2021.06.23 <!-- 時間 --> / 黃金歲月 <!-- 公司名稱 --> / 何勝傑 <!-- 職稱 -->
               </li>
               <li>
-				<b Style=";font-size:20px;" ><span>				三立都會台				</span></b>
+				<b Style=";font-size:15px;" ><span>				三立都會台				</span></b>
 			    <BR>2019.09.14 <!-- 時間 --> / 網紅的瘋狂世界 <!-- 公司名稱 --> / 游元樂 <!-- 職稱 -->
 			    <BR>2017.10.24 <!-- 時間 --> / 真情之家       <!-- 公司名稱 --> / 言希    <!-- 職稱 -->
 			    <BR>2014.12.16 <!-- 時間 --> / 我的寶貝四千金 <!-- 公司名稱 --> / 孫亦星  <!-- 職稱 -->
               </li>
               <li>
-				<b Style=";font-size:20px;" ><span>				八大綜合台			</span></b>
+				<b Style=";font-size:15px;" ><span>				八大綜合台			</span></b>
 			    <BR>2019.07.19 <!-- 時間 --> / 靈異街11號 <!-- 公司名稱 --> / 阿海  <!-- 職稱 -->
               </li>
               <li>
-				<b Style=";font-size:20px;" ><span>				電視劇				</span></b>
+				<b Style=";font-size:15px;" ><span>				電視劇				</span></b>
 			    <BR>2019. <!-- 時間 --> / 忠孝節義 <!-- 公司名稱 --> / 商輅 <!-- 職稱 -->
               </li>
               <li>
-				<b Style=";font-size:20px;" ><span>				優酷土豆網			</span></b>
+				<b Style=";font-size:15px;" ><span>				優酷土豆網			</span></b>
 			    <BR>2017.03.13 <!-- 時間 --> / 願有人陪你顛沛流離 <!-- 公司名稱 --> / 小含  <!-- 職稱 -->
               </li>
              <!--  <li>
@@ -503,7 +520,7 @@
           <!-- 標題 -->
           <h2>
           <!-- 歷史紀錄 -->
-          演出簡介-電影
+          電影
           </h2>
           <div class="workspace02">
              <ul>
@@ -518,7 +535,7 @@
               <!-- 新增歷史紀錄請從這裡開始貼上 -->
               <!-- 2024年X月 <!-- 時間 --> <!-- 聽海湧 <!-- 公司名稱 --> <!-- 新海木德 <!-- 職稱 -->
               <li>
-				<b Style=";font-size:20px;" ><span>				電影長片				</span></b>
+				<b Style=";font-size:15px;" ><span>				電影長片				</span></b>
 				<BR>2020.10.23 <!-- 時間 --> / 親愛的房客     <!-- 公司名稱 --> / 楊宗翰  <!-- 職稱 -->
 			    <BR>2018.08.31 <!-- 時間 --> / 引爆點         <!-- 公司名稱 --> / 威威    <!-- 職稱 -->
 				<BR>2015.10.24 <!-- 時間 --> / 結婚禁行曲     <!-- 公司名稱 --> / 陽陽    <!-- 職稱 -->
@@ -526,9 +543,12 @@
 			  <!--  <BR>2015.XX.XX <!-- 時間 --> <!-- / 角頭         <!-- 公司名稱 --> <!--/     <!-- 職稱 -->
               </li>				
               <li>
-				<b Style=";font-size:20px;" ><span>				電影短片				</span></b>
+				<b Style=";font-size:15px;" ><span>				電影短片				</span></b>
 			    <BR>2019.10.20 <!-- 時間 --> / 小洋           <!-- 公司名稱 --> / 李明洋 <!-- 職稱 -->
 			    <BR>2019.09.14 <!-- 時間 --> / 阿公的限時批   <!-- 公司名稱 --> / 宋小魚 <!-- 職稱 -->
+				<BR>
+				<BR>
+				<BR>				
 			  </li>
              <!--  <li>
                 <span>
@@ -556,7 +576,7 @@
           <!-- 標題 -->
           <h2>
           <!-- 歷史紀錄 -->
-          演出簡介-綜合
+          綜合
           </h2>
           <div class="workspace02">
              <ul>
@@ -571,7 +591,7 @@
               <!-- 新增歷史紀錄請從這裡開始貼上 -->
               <!-- 2024年X月 <!-- 時間 --> <!-- 聽海湧 <!-- 公司名稱 --> <!-- 新海木德 <!-- 職稱 -->
               <li>
-				<b Style=";font-size:20px;" ><span>				音樂MV				</span></b>
+				<b Style=";font-size:15px;" ><span>				音樂MV				</span></b>
 				<BR>2020.08.07 <!-- 時間 --> / 沙發裡有沙發Radio <!-- 公司名稱 --> / 日向    <!-- 職稱 -->
 				<!-- https://www.youtube.com/watch?v=2HwQQwDWO2s -->
 				<BR>2021.09.01 <!-- 時間 --> / 錄音帶 <!-- 公司名稱 --> / 蔡永森    <!-- 職稱 -->				
@@ -580,12 +600,12 @@
 				<!-- https://www.youtube.com/watch?v=PG7WrHfziM4 -->
               </li>				
               <li>
-				<b Style=";font-size:20px;" ><span>				會場主持			</span></b>
+				<b Style=";font-size:15px;" ><span>				會場主持			</span></b>
 			    <BR>2020.08.08 <!-- 時間 --> / 2020新北市兒童藝術節 <!-- 公司名稱 --> / 工地主任  <!-- 職稱 -->
 			    <!-- https://www.youtube.com/watch?v=qYTB36aJBlE -->
 			  </li>
               <li>
-				<b Style=";font-size:20px;" ><span>				廣告				</span></b>
+				<b Style=";font-size:15px;" ><span>				廣告				</span></b>
 				<BR>2027.10.27 <!-- 時間 --> / 全國電子 長不大的弟弟 <!-- 公司名稱 -->    <!-- 職稱 -->				
 				<!-- https://www.youtube.com/watch?v=sutvAWMs_Nk -->
 				<BR>2016.02.25 <!-- 時間 --> / 小時光麵館【第二季|第2話】黃金遊樂園 <!-- 公司名稱 --> / 阿強    <!-- 職稱 -->
