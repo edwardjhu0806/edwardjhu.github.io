@@ -1,7 +1,9 @@
 <!--第一行稱為HTML的文件型別宣告，其用途是用來讓瀏覽辨識目前要處理的文件是HTML5文件，讓瀏覽器能正確解讀我們的網頁內容-->
 <!DOCTYPE html>
+
 <!--台灣地區使用 zh-tw-->
 <html lang="zh-tw">
+
   <!--head是用來標示與文件相關的資訊-->
   <head>
 	<!--設置文檔的字符編碼，用來指定網頁內容是用什麼編碼(character set)，現在大多數的網頁編碼都是UTF-8-->
@@ -57,6 +59,7 @@
       $('head').append('<style type="text/css">#container { display: none; } #fade, #loader { display: block; }</style>');jQuery.event.add(window,"load",function() {var pageH = $("#container").height();$("#fade").css("height",pageH).delay(900).fadeOut(800);$("#loader").delay(600).fadeOut(300);$("#container").css("display", "block");});
     </script>
   </head>
+  
   <body class="home page">
     <div id="loader">
       <img src="assets/img/welcome/loading.gif" alt="Loading..." /><!-- 歡迎畫面的圖 -->
